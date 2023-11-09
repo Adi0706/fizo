@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CustomNavbar from './components/CustomNavbar'; // Adjust the relative path as necessary
+import Section from './components/Section';
+ import './App.css';
+import AboutSection from './components/AboutSection';
+import ServicesSection from './components/ServiceSection';
+import TeamSection from './components/TeamSection';
+import ExerciseSection from './components/ExerciseSection';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CustomNavbar />
+      <Section/>
+      <AboutSection/>
+      <ServicesSection/>
+      <TeamSection/>
+      <ExerciseSection/>
     </div>
   );
 }
